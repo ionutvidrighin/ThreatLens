@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+dist/
+cdk.out/
+*.tsbuildinfo
+coverage/
+
+# Hand-made deployment artifacts (CI builds these from now on)
+*.zip
+
+# Environment files (keep the committed .env.example templates)
+.env
+.env.*
+!.env.example
+
+# Local tooling / editor state
+.claude/
+.serena/
+.mcp.json
+.vscode/
+.postman/
+
+# Local-only notes
+THREATLENS_CODEX_HANDOFF.md
+
+# OS files
+.DS_Store
+Thumbs.db

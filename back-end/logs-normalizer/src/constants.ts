@@ -1,0 +1,8 @@
+export const COMPONENT_NAME = "ThreatLensNormalizer"
+
+export const AUTHENTICATION_EVENT = "authentication"
+export const CLOUD_TRAIL_EVENT = "AwsApiCall"
+
+export const INVALID_JSON = "INVALID_JSON"
+export const RAW_SCHEMA_VALIDATION_FAILED = "RAW_SCHEMA_VALIDATION_FAILED"
+export const OCSF_SCHEMA_VALIDATION_FAILED = "OCSF_SCHEMA_VALIDATION_FAILED"

@@ -1,0 +1,28 @@
+{
+	"name": "dashboard-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm test && tsc && tsc-alias",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"dependencies": {
+		"@aws-sdk/client-dynamodb": "^3.1166.0",
+		"@aws-sdk/lib-dynamodb": "^3.1166.0",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"@types/aws-lambda": "^8.10.164",
+		"@types/node": "^26.6.6",
+		"tsc-alias": "^1.9.10",
+		"typescript": "^7.0.2",
+		"vitest": "^5.1.0"
+	}
+}

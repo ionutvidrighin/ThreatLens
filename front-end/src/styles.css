@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/*
+ * Dark theme. Components use these semantic tokens (bg-surface, text-muted, ...)
+ * instead of hard-coded hex values, so the whole palette lives here.
+ */
+@theme {
+	--font-sans: "DM Sans", sans-serif;
+	--font-display: Manrope, sans-serif;
+
+	/* Surfaces, from the back of the page to the front */
+	--color-page: #0b0f1c; /* app background */
+	--color-sidebar: #0f1424; /* sidebar and top bar */
+	--color-nav: #0d1220; /* top bar */
+	--color-surface: #222939; /* cards and panels */
+	--color-surface-2: #1b2130; /* table headers, nested areas */
+	--color-field: #141a2a; /* inputs */
+	--color-hover: #2b3448; /* hover state on surfaces */
+
+	/* Text */
+	--color-heading: #f1f5fb;
+	--color-ink: #c6d0e0; /* body text */
+	--color-ink-soft: #a7b3c6; /* secondary text, table cells */
+	--color-muted: #8794aa;
+	--color-faint: #6c788d; /* hints, captions */
+
+	/* Lines */
+	--color-line: #2c3448;
+	--color-line-soft: #262d40;
+	--color-line-strong: #38425b;
+
+	/* Brand and accents */
+	--color-brand: #1a8a76;
+	--color-brand-dark: #157a68;
+	--color-focus: #5bc0d4;
+	--color-accent-teal: #47d3bb;
+	--color-accent-blue: #6cb6f0;
+	--color-accent-violet: #8b8bea;
+	--color-accent-orange: #e08a47;
+	--color-accent-red: #e0645f;
+	--color-accent-green: #5cc16f;
+}
+
+@layer base {
+	:root {
+		/* native controls, scrollbars and form widgets render dark too */
+		color-scheme: dark;
+	}
+
+	body {
+		background: var(--color-page);
+		color: var(--color-ink);
+		font-synthesis: none;
+	}
+
+	/* Tailwind's preflight resets buttons to the default cursor. */
+	button:not(:disabled) {
+		cursor: pointer;
+	}
+
+	button:focus-visible,
+	a:focus-visible {
+		outline: 3px solid var(--color-focus);
+		outline-offset: 4px;
+	}
+}

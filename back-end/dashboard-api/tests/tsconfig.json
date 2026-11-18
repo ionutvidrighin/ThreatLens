@@ -1,0 +1,10 @@
+{
+	// Used by the editor (and `tsc -p tests`) for the test files only.
+	// The main tsconfig.json covers src/ and is what `npm run build` uses.
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"rootDir": "..",
+		"noEmit": true
+	},
+	"include": ["./**/*.ts", "../src/**/*.ts"]
+}

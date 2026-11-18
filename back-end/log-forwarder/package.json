@@ -1,0 +1,23 @@
+{
+	"name": "log-forwarder",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "handler.ts",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"dependencies": {
+		"@aws-sdk/client-sqs": "^3.1161.0"
+	},
+	"devDependencies": {
+		"@types/aws-lambda": "^8.10.164",
+		"@types/node": "^26.6.6",
+		"typescript": "^7.0.2"
+	}
+}
