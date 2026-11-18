@@ -1,0 +1,18 @@
+{
+	"name": "threatlens",
+	"version": "1.0.0",
+	"private": true,
+	"description": "ThreatLens: AWS serverless SIEM (monorepo)",
+	"scripts": {
+		"lint": "biome check",
+		"format": "biome check --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ionutvidrighin/ThreatLens.git"
+	},
+	"type": "commonjs",
+	"devDependencies": {
+		"@biomejs/biome": "2.6.5"
+	}
+}
